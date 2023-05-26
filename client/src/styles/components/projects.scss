@@ -1,0 +1,126 @@
+.project {
+  &__wrapper {
+    // margin: 0 auto;
+    // width: 100%; 
+    // // height: 100vh;
+    // overflow-y: scroll;
+    // overflow: auto;
+    // display: flex;
+    // flex-direction: column;
+    position: relative;
+    overflow-y: auto;
+    // overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    width: 100%;
+  }
+
+  &__container {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid black;
+    width: 100vw;
+    height: 100vh;
+    transform: translate3d(0px, 0px, 0px); 
+    transition-duration: 0ms;
+    scroll-snap-align: center;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    font-size: $heading-1-font-size;
+    font-weight: 500;
+    letter-spacing: $spacing-extra-small;
+    color: $tertiary-color;
+    z-index: 11;
+    padding: 30px;
+
+    &:hover {
+      color: $hover-text-color;
+    }
+
+    &.special.black {
+      color: black
+    }
+  }
+
+
+  &__info-container {
+    background: rgba($primary-color, 0.96);
+    padding: 40px 0px 30px 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 0;
+    z-index: 11;
+    transform: translateY(100%);
+    transition: all 0.3s ease-in-out;
+    
+
+    &.open {
+      max-height: 400px;
+      transform: translateY(0);
+    }
+
+    h2, h3, p {
+      color: $tertiary-color;
+      padding-left: 20px;
+      letter-spacing: 1px;
+    }
+
+    h2, h3 {
+      text-transform: uppercase;
+    }
+
+    h2 {
+      padding-bottom: 10px;
+    }
+    
+    p {
+      max-width: 80%;
+      color: $project-info-p-text;
+    }
+
+  }
+
+  &__close {
+    height: 20px;
+    width: 20px;
+    border-right: 1px solid $tertiary-color;
+    border-top: 1px solid $tertiary-color;
+    transform: translateX(-50%) rotate(135deg);
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transition: transform .3s ease-in-out;
+    padding: 10px;
+    
+    &:hover {
+      transform: translate(-50%, 7px) rotate(135deg);
+    }
+  }
+
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0px 20px 0px 20px;
+}
+
+/* Example of how to fade our content in */
+
+.LazyLoad {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+

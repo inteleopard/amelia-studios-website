@@ -1,0 +1,39 @@
+.contact-wrapper {
+  background: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.contact-container {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: fixed;
+  right: 65px;
+  top: 140px;
+}
+
+.contact-text {
+  position: absolute;
+  top: 50px;
+  right: 5px;
+  text-align: right;
+  line-height: 30px;
+}
+
+.contact-logo {
+  // position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 200px;
+  height: auto;
+  margin-right: 1350px;
+  margin-top: 400px;
+}

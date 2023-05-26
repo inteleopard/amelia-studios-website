@@ -1,0 +1,113 @@
+// Import Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// Base Typography Styles
+$base-font-size: 1rem;
+$base-line-height: 1.5;
+$base-font-family: 'Inter', sans-serif;
+$base-text-color: $primary-color; // base font color
+$base-text-color-highlight: $secondary-color;
+
+$spacing-extra-small: 2px;
+$spacing-small: 10px;
+$shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+$hover-text-color: $secondary-color ;
+
+// Headings
+$heading-font-family: $base-font-family;
+$heading-font-weight: 500;
+
+  $heading-1-font-size: 1.5rem;
+  $heading-2-font-size: 1.4rem;
+  $heading-3-font-size: 1.05rem;
+  $heading-4-font-size: 1rem;
+  $heading-5-font-size: 0.875rem;
+
+
+// Body Text
+$body-font-weight: 400;
+$body-font-size: $base-font-size;
+$body-line-height: $base-line-height;
+
+// Links
+$link-color: $base-text-color;
+
+// Utility Classes
+.text {
+  &-muted {
+    color: #6c757d;
+  }
+  
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-lowercase {
+    text-transform: lowercase;
+  }
+
+  &-capitalize {
+    text-transform: capitalize;
+  }
+}
+
+// Global Styles
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: $body-font-weight;
+  color: $base-text-color; 
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: $base-text-color;
+
+  &:hover {
+    color: $hover-text-color;
+    transition: color 0.2s ease;
+  }
+}
+
+h1 {
+  font-size: $heading-1-font-size;
+}
+
+h2 {
+  font-size: $heading-2-font-size;
+}
+
+h3 {
+  font-size: $heading-3-font-size;
+}
+
+h4 {
+  font-size: $heading-4-font-size;
+}
+
+h5 {
+  font-size: $heading-5-font-size;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  color: $base-text-color; 
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover-text-color;
+  }
+}

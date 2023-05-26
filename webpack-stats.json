@@ -1,0 +1,7 @@
+{
+  "status": "error",
+  "assets": {},
+  "chunks": {},
+  "error": "ModuleNotFoundError",
+  "message": "Module not found: Error: Can't resolve './assets/js/index' in '/Users/kateoboyle/projects/2023/freelance/amelia-studios-website'"
+}

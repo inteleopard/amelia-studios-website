@@ -1,0 +1,49 @@
+// ****EDIT MEDIA BELOW**********
+
+/* Colors
+================================= */
+
+$primary-color: rgb(34, 31, 31);
+$secondary-color: rgb(214, 151, 136);
+$tertiary-color: rgb(252, 240, 225); 
+$project-info-p-text: rgb(146, 133, 133);
+
+
+/* Breakpoints
+================================= */
+
+// Variables for common breakpoint sizes
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 2400px;
+
+
+// Styles for small screens
+@media only screen and (max-width: $sm) {
+  // Adjust layout for small screens
+}
+
+// Styles for medium screens
+@media only screen and (min-width: $sm) and (max-width: $md) {
+  // Adjust layout for medium screens
+}
+
+// Styles for large screens
+@media only screen and (min-width: $md) and (max-width: $lg) {
+  // Adjust layout for large screens
+}
+
+// Styles for extra large screens
+@media only screen and (min-width: $lg) and (max-width: $xl) {
+  // Adjust layout for extra large screens
+}
+
+// Styles for larger than extra large screens
+@media only screen and (min-width: $xxl) {
+  // Adjust layout for larger than extra large screens
+
+  // PUSH ALL MEDIA INTO CENTRE ********** // 
+}
+
